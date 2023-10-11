@@ -5,7 +5,7 @@
 ## The makeCacheMatrix function creates a custom "matrix" object 
 ## with the ability to cache its inverse
 
-CacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
     x <<- y
